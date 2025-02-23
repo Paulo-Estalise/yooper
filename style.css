@@ -19,7 +19,7 @@ body {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding-bottom: 120px; /* Evita sobreposição com a barra */
+    padding-bottom: 120px; 
 }
 
 .imagem-topo img {
@@ -138,17 +138,16 @@ body {
     text-align: center;
 }
 
-/* Barra fixa no final da página (não rola com a tela) */
 .retangulo-vermelho {
-    width: 100vw; /* Ocupa toda a largura da tela */
-    height: 100px; /* Ajuste a altura conforme necessário */
+    width: 100vw; 
+    height: 100px; 
     background-color: #ff0000;
-    position: absolute; /* Mantém fixo no final da página */
-    bottom: 0; /* Alinha no final */
+    position: absolute; 
+    bottom: 0; 
     left: 0;
 }
 
-/* Ajuste para evitar sobreposição com a barra */
+
 body {
     padding-bottom: 120px;
     margin: 0;
