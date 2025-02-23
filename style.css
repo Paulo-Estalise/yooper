@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.container {
+    flex: 1;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 120px; /* Evita sobreposição com a barra */
+}
+
+.imagem-topo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.titulo {
+    font-size: 2.5rem;
+    margin-top: 20px;
+    color: #333;
+}
+
+.subtitulo {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #999;
+}
+
+.area-pesquisa {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffcccc;
+    padding: 15px;
+    border-radius: 25px;
+    width: 700px; /* Diminuir a largura */
+    margin: 30px auto;
+}
+
+.campo-pesquisa {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    padding: 10px; /* Aumentei o padding vertical */
+    font-size: 1rem;
+    color: #333;
+    height: 10px; /* Aumentei a altura do campo */
+}
+
+
+
+.botao-pesquisa {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.botao-pesquisa img {
+    width: 24px;
+    height: 24px;
+}
+
+.filtros {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.filtro-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.filtro-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.filtro-texto {
+    font-size: 0.9rem;
+    color: #ff0000;
+}
+
+.contador-herois {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.numero-herois {
+    font-weight: bold;
+}
+
+.lista-herois {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.heroi-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.imagem-heroi {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.nome-heroi {
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+}
+
+/* Barra fixa no final da página (não rola com a tela) */
+.retangulo-vermelho {
+    width: 100vw; /* Ocupa toda a largura da tela */
+    height: 100px; /* Ajuste a altura conforme necessário */
+    background-color: #ff0000;
+    position: absolute; /* Mantém fixo no final da página */
+    bottom: 0; /* Alinha no final */
+    left: 0;
+}
+
+/* Ajuste para evitar sobreposição com a barra */
+body {
+    padding-bottom: 120px;
+    margin: 0;
+    position: relative;
+}
