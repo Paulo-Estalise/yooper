@@ -1,0 +1,181 @@
+/* Estilo do logo */
+.logo-container {
+    position: absolute;
+    top: 20px; /* Ajuste a distância do topo */
+    left: 20px; /* Ajuste a distância da borda esquerda */
+}
+
+.logo {
+    height: 40px; /* Ajuste o tamanho do logo conforme necessário */
+    width: auto; /* Mantém a proporção do logo */
+}
+
+/* Estilos existentes para header */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #E7F6E7;
+    position: relative; /* Necessário para o logo usar o posicionamento absoluto */
+}
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    color: #8c8c8c;
+}
+
+body {
+    background-color: #E7F6E7;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #E7F6E7;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 600px;
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 5px 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.search-bar button img {
+    height: 20px;
+}
+
+.hero-title-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background-color: #E7F6E7;
+    position: relative;
+}
+
+.hero-title {
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 130px;
+    z-index: 1;
+}
+
+.hero-large-image img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.hero-info {
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.hero-name {
+    font-size: 2.2rem;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    max-width: 800px;
+    text-align: justify;
+}
+
+/* Ajuste para colocar Quadrinhos e Filmes lado a lado com 10% de espaçamento */
+.comics-movies {
+    display: flex;
+}
+
+.comics, .movies {
+    width: 10%; /* A largura de cada um é ajustada para que eles fiquem lado a lado com espaçamento */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px; /* Espaçamento entre o título e o ícone */
+
+}
+.rating {
+    flex-direction: column; /* Coloca o ícone embaixo do texto */
+    gap: 10px; 
+    margin-top: 10px; 
+    padding: 10px; /* Adiciona espaçamento interno para afastar da borda */
+
+}
+
+.icon-small {
+    height: 20px; /* Tamanho do ícone ajustado */
+}
+
+.latest-releases {
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.latest-releases .release-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.latest-releases .release-item {
+    text-align: center;
+}
+
+.latest-releases .release-item img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.latest-releases .release-item p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+footer {
+    margin-top: 40px;
+}
+
+.red-bar {
+    height: 60px;
+    background-color: red;
+}
