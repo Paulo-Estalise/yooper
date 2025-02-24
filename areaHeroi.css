@@ -1,29 +1,3 @@
-/* Estilo do logo */
-.logo-container {
-    position: absolute;
-    top: 20px; /* Ajuste a distância do topo */
-    left: 20px; /* Ajuste a distância da borda esquerda */
-}
-
-.logo {
-    height: 40px; /* Ajuste o tamanho do logo conforme necessário */
-    width: auto; /* Mantém a proporção do logo */
-}
-
-/* Estilos existentes para header */
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background-color: #E7F6E7;
-    position: relative; /* Necessário para o logo usar o posicionamento absoluto */
-}
-
-
-
-
-
 * {
     margin: 0;
     padding: 0;
@@ -43,6 +17,18 @@ header {
     align-items: center;
     padding: 20px;
     background-color: #E7F6E7;
+    position: relative;
+}
+
+.logo-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
 }
 
 .search-bar {
@@ -118,29 +104,27 @@ header {
     text-align: justify;
 }
 
-/* Ajuste para colocar Quadrinhos e Filmes lado a lado com 10% de espaçamento */
 .comics-movies {
     display: flex;
 }
 
 .comics, .movies {
-    width: 10%; /* A largura de cada um é ajustada para que eles fiquem lado a lado com espaçamento */
+    width: 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px; /* Espaçamento entre o título e o ícone */
-
+    gap: 5px;
 }
-.rating {
-    flex-direction: column; /* Coloca o ícone embaixo do texto */
-    gap: 10px; 
-    margin-top: 10px; 
-    padding: 10px; /* Adiciona espaçamento interno para afastar da borda */
 
+.rating {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    padding: 10px;
 }
 
 .icon-small {
-    height: 20px; /* Tamanho do ícone ajustado */
+    height: 20px;
 }
 
 .latest-releases {
