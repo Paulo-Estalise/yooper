@@ -179,5 +179,23 @@
     </div>
     <div class="retangulo-vermelho"></div>
   </div>
+  <script>
+    // Função para redirecionar ao clicar na imagem do Homem-Aranha
+    document.getElementById('homem-aranha').addEventListener('click', function() {
+      window.location.href = 'homenAranha.html';
+    });
+
+    // Função para redirecionar ao pesquisar por "Homem-Aranha"
+    document.getElementById('form-pesquisa').addEventListener('submit', function(event) {
+      event.preventDefault(); // Impede o envio do formulário
+      const termoPesquisa = document.querySelector('.campo-pesquisa').value.toLowerCase();
+      
+      if (termoPesquisa === 'homem-aranha') {
+        window.location.href = 'homenAranha.html';
+      } else {
+        alert('Herói não encontrado. Tente novamente.');
+      }
+    });
+  </script>
 </body>
 </html>
