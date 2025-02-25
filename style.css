@@ -1,4 +1,4 @@
-/* Reset de estilos */
+
 * {
     margin: 0;
     padding: 0;
@@ -50,30 +50,45 @@ body {
     background-color: #ffcccc;
     padding: 15px;
     border-radius: 25px;
-    width: 700px;
+    width: 800px;
+    max-width: 90%; 
     margin: 30px auto;
+    position: relative;
 }
 
 .campo-pesquisa {
     border: none;
     outline: none;
     background: transparent;
-    width: 100%;
-    padding: 10px;
+    width: 80%; 
+    padding: 10px 30px 10px 15px; 
     font-size: 1rem;
-    color: #333;
+    color: #333; 
+    flex: 1;
+}
+
+.campo-pesquisa::placeholder {
+    color: #999;
 }
 
 .botao-pesquisa {
     border: none;
     background: transparent;
     cursor: pointer;
+    position: absolute;
+    right: 20px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .botao-pesquisa img {
     width: 24px;
     height: 24px;
 }
+
 
 .filtros {
     display: flex;
@@ -112,7 +127,7 @@ body {
 .lista-herois {
     margin-top: 20px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
     gap: 20px;
 }
 
@@ -148,10 +163,8 @@ body {
     height: 20px;
     object-fit: contain;
     border-radius: 50%;
-    margin-left: 120px;
+    margin-left: auto;
 }
-
-
 
 .retangulo-vermelho {
     width: 100vw;

@@ -14,10 +14,12 @@
     <h1 class="titulo">EXPLORE O UNIVERSO</h1>
     <h2 class="subtitulo">Mergulhe no domínio deslumbrante de todos os personagens clássicos que você ama - e aqueles que você descobrirá em breve!</h2>
     <div class="area-pesquisa">
-      <input type="text" placeholder="Procure por heróis" class="campo-pesquisa">
-      <button class="botao-pesquisa">
-        <img src="img/lupa.png" alt="Lupa" class="lupa">
-      </button>
+      <form id="form-pesquisa">
+        <input type="text" placeholder="Procure por heróis" class="campo-pesquisa">
+        <button type="submit" class="botao-pesquisa">
+          <img src="img/lupa.png" alt="Lupa" class="lupa">
+        </button>
+      </form>
     </div>
     <div class="filtros">
       <div class="filtro-item">
@@ -36,162 +38,133 @@
       Encontrados <span class="numero-herois">20</span> heróis
     </div>
     <div class="lista-herois">
-      <div class="heroi-item">
+      <div class="heroi-item" onclick="window.location.href='homenAranha.html?heroi=Homem-Aranha';">
         <img src="img/homen ara.jpg" alt="Homem-Aranha" class="imagem-heroi">
         <div class="nome-heroi">
           <span>Homem-Aranha</span>
           <img src="/img/coraçãoBranco.png" class="mini-imagem-heroi">
         </div>
       </div>
-      <div class="heroi-item">
+      <div class="heroi-item" onclick="window.location.href='homemDeFerro.html?heroi=Homem de Ferro';">
         <img src="img/Homen De Ferro1.jpg" alt="Homem de Ferro" class="imagem-heroi">
         <div class="nome-heroi">
           <span>Homem de Ferro</span>
           <img src="/img/coraçãoBranco.png" class="mini-imagem-heroi">
         </div>
       </div>
-      <div class="heroi-item">
+      <div class="heroi-item" onclick="window.location.href='capitaoAmerica.html?heroi=Capitão América';">
         <img src="img/capitao01.jpg" alt="Capitão América" class="imagem-heroi">
         <div class="nome-heroi">
           <span>Capitão América</span>
           <img src="/img/coraçãoBranco.png" class="mini-imagem-heroi">
         </div>
       </div>
-      <div class="heroi-item">
+      <div class="heroi-item" onclick="window.location.href='thor.html?heroi=Thor';">
         <img src="img/thor.jpg" alt="Thor" class="imagem-heroi">
         <div class="nome-heroi">
           <span>Thor</span>
           <img src="/img/coraçãoBranco.png" class="mini-imagem-heroi">
         </div>
       </div>
-      <div class="heroi-item">
+      <div class="heroi-item" onclick="window.location.href='hulk.html?heroi=Hulk';">
         <img src="img/Hulk.jpg" alt="Hulk" class="imagem-heroi">
         <div class="nome-heroi">
           <span>Hulk</span>
           <img src="/img/coraçãoBranco.png" class="mini-imagem-heroi">
         </div>
       </div>
-      <div class="heroi-item">
+      <div class="heroi-item" onclick="window.location.href='viuvaNegra.html?heroi=Viúva Negra';">
         <img src="img/viuva.jpg" alt="Viúva Negra" class="imagem-heroi">
         <div class="nome-heroi">
           <span>Viúva Negra</span>
           <img src="/img/coraçãoBranco.png" class="mini-imagem-heroi">
         </div>
       </div>
-      <div class="heroi-item">
+      <div class="heroi-item" onclick="window.location.href='panteraNegra.html?heroi=Pantera Negra';">
         <img src="img/pantera.jpg" alt="Pantera Negra" class="imagem-heroi">
         <div class="nome-heroi">
           <span>Pantera Negra</span>
           <img src="/img/coraçãoBranco.png" class="mini-imagem-heroi">
         </div>
       </div>
-      <div class="heroi-item">
+      <div class="heroi-item" onclick="window.location.href='doutorEstranho.html?heroi=Doutor Estranho';">
         <img src="img/doutor.jpg" alt="Doutor Estranho" class="imagem-heroi">
         <div class="nome-heroi">
           <span>Doutor Estranho</span>
           <img src="/img/coraçãoBranco.png" class="mini-imagem-heroi">
         </div>
       </div>
-      <div class="heroi-item">
+      <div class="heroi-item" onclick="window.location.href='capitaMarvel.html?heroi=Capitã Marvel';">
         <img src="img/cap marvel.jpg" alt="Capitã Marvel" class="imagem-heroi">
         <div class="nome-heroi">
           <span>Capitã Marvel</span>
           <img src="/img/coraçãoBranco.png" class="mini-imagem-heroi">
         </div>
       </div>
-      <div class="heroi-item">
+      <div class="heroi-item" onclick="window.location.href='gaviaoArqueiro.html?heroi=Gavião Arqueiro';">
         <img src="img/arqueiro.jpg" alt="Gavião Arqueiro" class="imagem-heroi">
         <div class="nome-heroi">
           <span>Gavião Arqueiro</span>
           <img src="/img/coraçãoBranco.png" class="mini-imagem-heroi">
         </div>
       </div>
-      <div class="heroi-item">
+      <div class="heroi-item" onclick="window.location.href='feiticeiraEscarlate.html?heroi=Feiticeira Escarlate';">
         <img src="img/escalate.jpg" alt="Feiticeira Escarlate" class="imagem-heroi">
         <div class="nome-heroi">
           <span>Feiticeira Escarlate</span>
           <img src="/img/coraçãoBranco.png" class="mini-imagem-heroi">
         </div>
       </div>
-      <div class="heroi-item">
+      <div class="heroi-item" onclick="window.location.href='visao.html?heroi=Visão';">
         <img src="img/visao.jpg" alt="Visão" class="imagem-heroi">
         <div class="nome-heroi">
           <span>Visão</span>
           <img src="/img/coraçãoBranco.png" class="mini-imagem-heroi">
         </div>
       </div>
-      <div class="heroi-item">
+      <div class="heroi-item" onclick="window.location.href='falcao.html?heroi=Falcão';">
         <img src="img/falcao.jpg" alt="Falcão" class="imagem-heroi">
         <div class="nome-heroi">
           <span>Falcão</span>
           <img src="/img/coraçãoBranco.png" class="mini-imagem-heroi">
         </div>
       </div>
-      <div class="heroi-item">
+      <div class="heroi-item" onclick="window.location.href='maquinaCombate.html?heroi=Máquina de Combate';">
         <img src="img/maquina.jpg" alt="Máquina de Combate" class="imagem-heroi">
         <div class="nome-heroi">
           <span>Máquina de Combate</span>
           <img src="/img/coraçãoBranco.png" class="mini-imagem-heroi">
         </div>
       </div>
-      <div class="heroi-item">
+      <div class="heroi-item" onclick="window.location.href='homemFormiga.html?heroi=Homem-Formiga';">
         <img src="img/formiga.jpg" alt="Homem-Formiga" class="imagem-heroi">
         <div class="nome-heroi">
           <span>Homem-Formiga</span>
           <img src="/img/coraçãoBranco.png" class="mini-imagem-heroi">
         </div>
       </div>
-      <div class="heroi-item">
+      <div class="heroi-item" onclick="window.location.href='vespa.html?heroi=Vespa';">
         <img src="img/vespa.jpg" alt="Vespa" class="imagem-heroi">
         <div class="nome-heroi">
           <span>Vespa</span>
           <img src="/img/coraçãoBranco.png" class="mini-imagem-heroi">
         </div>
       </div>
-      <div class="heroi-item">
-        <img src="img/loki.jpg" alt="Loki" class="imagem-heroi">
-        <div class="nome-heroi">
-          <span>Loki</span>
-          <img src="/img/coraçãoBranco.png" class="mini-imagem-heroi">
-        </div>
-      </div>
-      <div class="heroi-item">
-        <img src="img/deadpool.jpg" alt="Deadpool" class="imagem-heroi">
-        <div class="nome-heroi">
-          <span>Deadpool</span>
-          <img src="/img/coraçãoBranco.png" class="mini-imagem-heroi">
-        </div>
-      </div>
-      <div class="heroi-item">
-        <img src="img/wolverine.jpg" alt="Wolverine" class="imagem-heroi">
-        <div class="nome-heroi">
-          <span>Wolverine</span>
-          <img src="/img/coraçãoBranco.png" class="mini-imagem-heroi">
-        </div>
-      </div>
-      <div class="heroi-item">
-        <img src="img/thanos.jpg" alt="Tempestade" class="imagem-heroi">
-        <div class="nome-heroi">
-          <span>Thanos</span>
-          <img src="/img/coraçãoBranco.png" class="mini-imagem-heroi">
-        </div>
+      
+    
       </div>
     </div>
     <div class="retangulo-vermelho"></div>
   </div>
   <script>
-    // Função para redirecionar ao clicar na imagem do Homem-Aranha
-    document.getElementById('homem-aranha').addEventListener('click', function() {
-      window.location.href = 'homenAranha.html';
-    });
-
-    // Função para redirecionar ao pesquisar por "Homem-Aranha"
     document.getElementById('form-pesquisa').addEventListener('submit', function(event) {
-      event.preventDefault(); // Impede o envio do formulário
+      event.preventDefault();
       const termoPesquisa = document.querySelector('.campo-pesquisa').value.toLowerCase();
       
       if (termoPesquisa === 'homem-aranha') {
-        window.location.href = 'homenAranha.html';
+        window.location.href = 'homenAranha.html?heroi=Homem-Aranha';
+      } else if (termoPesquisa === 'homem de ferro') {
+        window.location.href = 'homemDeFerro.html?heroi=Homem de Ferro';
       } else {
         alert('Herói não encontrado. Tente novamente.');
       }

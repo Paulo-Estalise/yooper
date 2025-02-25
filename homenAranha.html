@@ -104,5 +104,15 @@
     <footer>
         <div class="red-bar"></div>
     </footer>
+    <script>
+        
+        const urlParams = new URLSearchParams(window.location.search);
+        const heroi = urlParams.get('heroi');
+    
+        if (heroi) {
+          document.getElementById('hero-title').textContent = heroi;
+          document.getElementById('hero-name').textContent = heroi;
+        }
+      </script>
 </body>
 </html>
